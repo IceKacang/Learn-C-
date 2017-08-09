@@ -63,8 +63,8 @@ void ui()
 {
 	char input;
 	float value,output;
-	printf("1. Enter 'f' for convertion from °C -> °F\n");
-	printf("2. Enter 'c' for convertion from °F -> °C \n");
+	printf("1. Enter 'f' for conversion from °C -> °F\n");
+	printf("2. Enter 'c' for conversion from °F -> °C \n");
 	input=getchar();
 	
 	printf("\nEnter value:\t");
@@ -84,6 +84,6 @@ void ui()
 		break;
 
 		default:
-			printf("Invalid convertion!!!\n");		
+			printf("Invalid conversion!!!\n");		
 	}
 }	
