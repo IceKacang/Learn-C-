@@ -11,9 +11,14 @@ Technique that can be learned:
 3.	right justify 
 4.	switch case
 5.	for and while loop
+6.	define
 */
 
 #include<stdio.h>
+
+#define LOWERLIMIT -80
+#define UPPERLIMIT 80
+#define STEP 20
 
 void f2c();
 void c2f();
@@ -34,7 +39,7 @@ void f2c()
 	float f;
 	float c;
 	printf("%s\t%s\n","fahrenheit/°F","celsius/°C");
-	for(f=-60;f<=300;f=f+20)
+	for(f=LOWERLIMIT;f<=UPPERLIMIT;f+=STEP)
 	{
 		c=5.0/9.0*(f-32);
 		printf("%6.1f\t\t%6.1f\n",f,c);
@@ -44,13 +49,13 @@ void f2c()
 void c2f()
 {
 	float f;
-	float c=-60;
+	float c=LOWERLIMIT;
 	printf("%s\t%s\n","celsius/°C","fahrenheit/°F");
-	while(c<=300)
+	while(c<=UPPERLIMIT)
 	{	
 		f=c*9.0/5.0+32;
 		printf("%6.1f\t\t%6.1f\n",c,f);
-		c+=20;
+		c+=STEP;
 	}
 }
 
