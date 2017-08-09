@@ -4,6 +4,13 @@ There are 3 parts:
 i.	fahrenheit to celsius
 ii.	celsius to fahrenheit
 iii.	User input
+
+Technique that can be learned:
+1.	function
+2.	input and output cmd
+3.	right justify 
+4.	switch case
+5.	for and while loop
 */
 
 #include<stdio.h>
@@ -30,7 +37,7 @@ void f2c()
 	for(f=-60;f<=300;f=f+20)
 	{
 		c=5.0/9.0*(f-32);
-		printf("%.1f\t\t%.1f\n",f,c);
+		printf("%6.1f\t\t%6.1f\n",f,c);
 	}
 }
 
@@ -42,7 +49,7 @@ void c2f()
 	while(c<=300)
 	{	
 		f=c*9.0/5.0+32;
-		printf("%.1f\t\t%.1f\n",c,f);
+		printf("%6.1f\t\t%6.1f\n",c,f);
 		c+=20;
 	}
 }
