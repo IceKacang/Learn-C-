@@ -1,7 +1,7 @@
 /*
 Example of array and pointer
 
- *ptr 	 is a pointer
+ *ptr  	 is a pointer  name[] == *ptr
   x  	 is a variable
 name[10] is an array
 
